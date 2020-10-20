@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Logo</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANBCyUznFtCEt6LYLEFT-17Xe9hAKqkUg&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </head>
+  <body>
+    <section class="styleBreak">
+      <div class="filler1"></div>
+      <div class="filler2"></div>
+    </section>
+
+    <section id="location" class="location">
+
+      <div class="sectionTitle titleText">Location</div>
+
+      <div class="address">
+        <h3 class="titleText">Hideaway@408</h3>
+        <p>408 Main St</p>
+        <p>Windsor, CO 80550</p>
+        <p>(952)222-4343</p>
+      </div>
+
+      <div class="hours">
+        <div class="dayOfWeek">
+          <h5 id="monday">Monday</h5>
+          <h5 class="tuesday">Tuesday</h5>
+          <h5 id="wednesday">Wednesday</h5>
+          <h5 id="thursday">Thursday</h5>
+          <h5 id="friday">Friday</h5>
+          <h5 id="saturday">Saturday</h5>
+          <h5 id="sunday">Sunday</h5>
+        </div>
+        <div class="dailyHours">
+          <h4>11am - 8pm</h4>
+          <h4 class="tuesday">11am - 8pm</h4>
+          <h4>11am - 8pm</h4>
+          <h4>11am - 8pm</h4>
+          <h4>11am - 8pm</h4>
+          <h4>11am - 8pm</h4>
+          <h4>11am - 8pm</h4>
+        </div>
+      </div>
+
+      <div class="logoWrapper">
+        <div class="logoMain">
+          <div class="logoLine1 titleText">Hide</div>
+          <div class="logoLine2 titleText">AWAY</div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+
+    </section>
+
+
+    <section class="social">
+      <div class="socialIcons">
+        <img src="svg/instagram.svg" alt="instagram logo">
+        <img src="svg/facebook.svg" alt="facebook logo">
+        <img src="svg/twitter.svg" alt="twitter logo">
+      </div>
+    </section>
+
+    <section class="copyright">
+      <p>&copy; 2020 Hideaway | PrivacyPolicy</p>
+      <p>A DataHaze Experience</p>
+    </section>
+  </body>
+  <script src="javascript/dayApp.js"></script>
+  <script src="javascript/mapApp.js"></script>
+</html>
