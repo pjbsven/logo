@@ -1,0 +1,160 @@
+/* --------- base styles ----------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.titleText {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+}
+
+.sectionTitle,
+.address,
+.hours,
+.logoWrapper,
+#map {
+  margin-bottom: 10px;
+}
+
+h5,
+h4 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.highlight {
+  background-color: red;
+}
+
+#map {
+  height: 300px;
+  width: 100vw;
+  order: 5;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons img {
+  width: 25px;
+  align-self: center;
+}
+
+.socialIcons img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.copyright {
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+.copyright p {
+  font-size: 12px;
+
+}
+
+/* --------- styleBreak ----------- */
+.filler1 {
+  background-color: tomato;
+  height: 10px;
+  width: 100vw;
+}
+
+.filler2 {
+  background-color: grey;
+  height: 10px;
+  width: 100vw;
+  margin-top: 2px;
+}
+/* --------- logo ----------- */
+
+.logoMain {
+  border: solid 2px black;
+  width: 127px;
+  height: 127px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+
+.logoLine1 {
+  margin-top: 50px;
+}
+
+.logoLine2 {
+  margin-top: -11px;
+}
+
+/* --------- flex ----------- */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hours {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------- Media Quiers ----------- */
+
+@media screen and (min-width:768px){
+
+  .location {
+    flex-direction: row;
+  }
+
+  .sectionTitle,
+  .address,
+  .hours,
+  .logoWrapper {
+    width: 50vw;
+  }
+
+  .hours {
+    order: 4;
+  }
+}
